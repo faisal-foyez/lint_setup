@@ -1,0 +1,31 @@
+{
+  "name": "lint_setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format":"prettier --write \"./src/**/*{.js,.jsx,.ts,.tsx}\"", 
+    "format:check":"prettier --check \"./src/**/*{.js,.jsx,.ts,.tsx}\"",
+    "lint": "eslint \"./src/**/*{.js,.jsx,.ts,.tsx}\" --quiet",
+    "lint-install":"yarn add -D prettier && yarn add -D babel-eslint && npx install-peerdeps --dev eslint-config-airbnb && yarn add -D eslint-config-prettier eslint-plugin-prettier && yarn add -D @typescript-eslint/eslint-plugin && yarn add -D eslint-import-resolver-typescript && yarn add -D @typescript-eslint/parser"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "prettier": "^2.6.2"
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
